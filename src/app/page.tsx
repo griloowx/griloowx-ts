@@ -228,13 +228,12 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Jhonnyssom Silva, 32, based in Curitiba, and a front-end developer.
+            Sou o Jhonnyssom Silva, 32 anos, morando em Curitiba, e hoje sou um desenvolvedor de front end.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Jhonnyssom Silva, a front-end developer and amateur athlete
-            based in Curitiba. With a passion for crafting user experiences and
-            a love for sports, I balance my career at Nivello Tecnologia with my
-            hobbies, all while enjoying time with my family.
+            Atuando como desenvolvedor front end na <strong>Nivello Tecnologia</strong> em Curitiba.
+            Divido meu tempo entre o trabalho, estudos, família e esportes. Tento sempre manter o equilíbrio entre essas áreas e me dedicar ao máximo em cada uma delas.
+            Grato por ter você por aqui, espero que goste do conteúdo que compartilho. Bem-vindo!
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
