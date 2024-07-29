@@ -30,7 +30,7 @@ export function Footer() {
                 <NavLink href="/">Início</NavLink>
                 <NavLink href="/about">Sobre</NavLink>
                 <NavLink href="/articles">Artigos</NavLink>
-                <NavLink href="/">Spotify</NavLink>
+                <NavLink href="/music">Spotify</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Jhonnyssom Silva. Todos os direitos reservados.
