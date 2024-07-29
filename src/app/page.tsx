@@ -15,6 +15,7 @@ import logoMFM from '@/images/logos/mfmgroup.svg'
 import logoWipro from '@/images/logos/wipro.svg'
 import logoNivello from '@/images/logos/nivello.svg'
 import logoPilgrims from '@/images/logos/pilgrims.svg'
+import logoPucpr from '@/images/logos/pucpr.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -22,6 +23,7 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import { EducationCard } from '@/components/EducationCard'
 
 function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -136,31 +138,31 @@ function Resume() {
   let resume: Array<Role> = [
     {
       company: 'Nivello Tecnologia',
-      title: 'Developer',
+      title: 'Desenvolvedor Front End',
       logo: logoNivello,
       start: '2024',
       end: {
-        label: 'Present',
+        label: 'Atual',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
       company: 'Pilgrims Consulting',
-      title: 'Technology Analyst',
+      title: 'Analista de TI',
       logo: logoPilgrims,
       start: '2022',
       end: '2023',
     },
     {
       company: 'MFM Group',
-      title: 'Technology Project Analyst',
+      title: 'Analista de Projetos de TI',
       logo: logoMFM,
       start: '2020',
       end: '2022',
     },
     {
       company: 'Wipro Brasil',
-      title: 'Technological Operations Assistant',
+      title: 'Assistente de TI',
       logo: logoWipro,
       start: '2017',
       end: '2019',
@@ -170,9 +172,9 @@ function Resume() {
   return (
     <>
       <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-        <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <h2 className="flex text-base font-semibold text-zinc-900 dark:text-zinc-100">
           <BriefcaseIcon className="h-6 w-6 flex-none" />
-          <span className="ml-3">Work</span>
+          <span className="ml-3">Experiências</span>
         </h2>
         <ol className="mt-6 space-y-4">
           {resume.map((role, roleIndex) => (
@@ -228,12 +230,16 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Sou o Jhonnyssom Silva, 32 anos, morando em Curitiba, e hoje sou um desenvolvedor de front end.
+            Sou o Jhonnyssom Silva, 32 anos, morando em Curitiba, e hoje sou um
+            desenvolvedor de front end.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Atuando como desenvolvedor front end na <strong>Nivello Tecnologia</strong> em Curitiba.
-            Divido meu tempo entre o trabalho, estudos, família e esportes. Tento sempre manter o equilíbrio entre essas áreas e me dedicar ao máximo em cada uma delas.
-            Grato por ter você por aqui, espero que goste do conteúdo que compartilho. Bem-vindo!
+            Atuando como desenvolvedor front end na{' '}
+            <strong>Nivello Tecnologia</strong> em Curitiba. Divido meu tempo
+            entre o trabalho, estudos, família e esportes. Tento sempre manter o
+            equilíbrio entre essas áreas e me dedicar ao máximo em cada uma
+            delas. Grato por ter você por aqui, espero que goste do conteúdo que
+            compartilho. Bem-vindo!
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -272,6 +278,15 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
+            <div className=''>
+              <EducationCard
+                logo={logoPucpr}
+                institution="PUCPR"
+                degree="Análise e Desenvolvimento de Sistemas"
+                start="2024"
+                end="Cursando"
+              />
+            </div>
             <Resume />
           </div>
         </div>

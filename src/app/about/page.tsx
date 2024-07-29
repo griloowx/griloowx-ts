@@ -49,9 +49,9 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'Sobre',
   description:
-    'I’m Jhonnyssom Silva. I live in Curitiba and I am a front-end developer.',
+    'Eu sou Jhonnyssom Silva. Eu moro em Curitiba e sou desenvolvedor de front-end.',
 }
 
 export default function About() {
@@ -70,63 +70,66 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Jhonnyssom Silva. I live in Curitiba and I am a front-end
-            developer.
+            Sobre mim:
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I am Jhonnyssom Silva, also known as (Grilo). Today, I am the
-              father of little Mariana and have been married to Bruna for nine
-              years. Together, we form a very happy family, learning something
-              new from each other every day, which keeps us joyful.
+              Eu sou Jhonnyssom Silva, também conhecido como Grilo. Sou pai da
+              pequena Mariana e estou casado com a Bruna há nove anos. Juntos,
+              formamos uma família muito feliz, sempre aprendendo algo novo um
+              com o outro, o que nos mantém alegres e unidos.
             </p>
             <p>
-              Currently, I am a developer at Nivello Tecnologia, the company
-              that gave me my first opportunity in the development field. Here,
-              I work with wonderful people who are committed to evolving every
-              day. It has been an incredible experience.
+              Atualmente, trabalho como desenvolvedor front-end na Nivello
+              Tecnologia, a empresa que me deu minha primeira oportunidade na
+              área de desenvolvimento. Aqui, tenho o privilégio de colaborar com
+              pessoas maravilhosas que estão comprometidas em evoluir a cada
+              dia, oferecendo suporte e conselhos que me ajudam a crescer como
+              profissional. Tem sido uma experiência incrível.
             </p>
             <p>
-              I also lead an organized life, trying to engage in sports like
-              cycling and street running during the week. I aim to stay healthy
-              to have a long life, achieve my dreams, and fulfill my plans.
+              Mantenho uma vida organizada e me dedico a praticar esportes, como
+              ciclismo e corrida de rua, ao longo da semana. Meu objetivo é
+              preservar minha saúde para garantir uma vida longa, realizar meus
+              sonhos e alcançar meus objetivos.
             </p>
             <p>
-              I love to write, share my ideas, inventions, and new things. I am
-              passionate about series, and my favorite by far is <strong>DARK</strong>.
-              Additionally, I enjoy everything related to space, the moon,
-              astronauts, and the like. I also love music, listening to
-              podcasts, and appreciate the idea of minimalism. I consider myself
-              a fun, protective person, and most importantly, grateful for life.
+              Adoro escrever e compartilhar minhas ideias, invenções e
+              novidades. Sou apaixonado por séries, e a minha favorita é, sem
+              dúvida, <strong>D A R K</strong>. Além disso, tenho um grande
+              interesse por tudo relacionado ao espaço, à lua, aos astronautas e
+              afins. Também amo música, ouvir podcasts e valorizo a ideia de
+              minimalismo. Considero-me uma pessoa divertida, protetora e, acima
+              de tudo, grata pela vida.
             </p>
-            <p>Welcome to my corner.</p>
+            <p>Bem-vindo ao meu espaço!</p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
             <SocialLink href="https://x.com/griloowx" icon={XIcon}>
-              Follow on X
+             Meu `X` twitter
             </SocialLink>
             <SocialLink
               href="https://instagram.com/griloowx"
               icon={InstagramIcon}
               className="mt-4"
             >
-              Follow on Instagram
+             Meu Instagram
             </SocialLink>
             <SocialLink
               href="https://github.com/griloowx"
               icon={GitHubIcon}
               className="mt-4"
             >
-              Follow on GitHub
+             Meu GitHub
             </SocialLink>
             <SocialLink
               href="https://linkedin.com/in/jhonnyssomsilva"
               icon={LinkedInIcon}
               className="mt-4"
             >
-              Follow on LinkedIn
+             Meu LinkedIn
             </SocialLink>
             <SocialLink
               href="mailto:jhonnyssomux@icloud.com"
