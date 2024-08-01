@@ -8,10 +8,10 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - Jhonnyssom Silva',
-    default: 'Jhonnyssom Silva - Developer',
+    default: 'Jhonnyssom Silva',
   },
   description:
-    'I’m Jhonnyssom Silva. I live in Curitiba and I am a front-end developer.',
+    'Eu sou Jhonnyssom Silva. Eu moro em Curitiba e sou desenvolvedor front-end.',
 }
 
 export default function RootLayout({
